@@ -7,6 +7,7 @@ matrixvalues = [[4.0, 1.0, 0.0], [0.0, 2.0, 1.0], [0.0, 0.0, -1.0]]
 vectorvalues = [1.0, 1.0, 1.0]
 
 matrix = SquareMatrix(matrixvalues)
+matrix = matrix.transpose()
 vector = Vector(vectorvalues)
 vector = vector.normalize()
 
@@ -15,6 +16,7 @@ print(matrix.matrix)
 print(vector.values)
 
 for i in range(0, iterations):
+    print('----------------------')
     print("Iteration: " + str(i))
     vector = matrix.multiply(vector)
     print("After multiplying:")
