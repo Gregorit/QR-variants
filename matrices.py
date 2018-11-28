@@ -13,7 +13,6 @@ class SquareMatrix:
         return Vector(values)
 
     def transpose(self):
-        newmatrix = []
         newmatrix = [list(x) for x in zip(*self.matrix)]
         return SquareMatrix(newmatrix)
 
