@@ -14,12 +14,7 @@ class SquareMatrix:
 
     def transpose(self):
         newmatrix = []
-        temp = []
-        for m in range(0, len(self.matrix)):
-            for n in range(0, len(self.matrix[m])):
-                temp.append(self.matrix[n][m])
-            newmatrix.append(temp)
-            temp = []
+        newmatrix = [list(x) for x in zip(*self.matrix)]
         return SquareMatrix(newmatrix)
 
 
