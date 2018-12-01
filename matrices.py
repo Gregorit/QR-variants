@@ -1,5 +1,6 @@
 import math
 
+
 class SquareMatrix:
     def __init__(self, matrix):
         self.matrix = matrix
@@ -19,11 +20,12 @@ class SquareMatrix:
         return SquareMatrix(newmatrix)
 
     def leibniz(self):
-        # Leibniz rule
-        return self.matrix[0][0] * self.matrix[1][1] - (self.matrix[0][1] * self.matrix[1][0])
+        """Leibniz rule"""
+        return self.matrix[0][0] * self.matrix[1][1] - (self.matrix[0][1] *
+                                                        self.matrix[1][0])
 
     def sarrus(self):
-        # Sarrus rule
+        """Sarrus rule"""
         det = 0.0
         for i in range(0, len(self.matrix)):
             prod = self.matrix[0][i]
