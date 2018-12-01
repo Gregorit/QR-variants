@@ -31,4 +31,3 @@ print(f'For eigenvector: {vector.values}')
 result_vector = mat.multiply(vector)
 prop = result_vector.value_proportion(vector)
 print(f'Smallest eigenvalue: {prop}')
-

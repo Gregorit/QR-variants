@@ -132,11 +132,3 @@ class Vector:
         for i in range(len(self.values)):
             sum += self.values[i]/vector.values[i]
         return sum / len(self.values)
-
-
-
-
-
-
-
-
